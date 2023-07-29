@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <form action="submit.html" method="get">
+        <label for="first Name">First Name</label>
+        <input id="First Name" name="First Name" />
+        <br />
+        <br />
+        <label for="Middlename:">Middlename:</label>
+        <input id="Middlename:" name="Middlename:" />
+        <br />
+        <br />
+        <label for="Lastname">Lastname:</label>
+        <input id="Lastname" name="Lastname" />
+        <br />
+        <br />
+        <label for="Course">Course : </label>
+        <select name="Course" id="Course">
+          <option value="">Course</option>
+          <option value="">MBA</option>
+          <option value="">B.TECH</option>
+          <option value="">BBA</option>
+          <option value="">MCA</option>
+          <option value="">M.TECH</option>
+        </select>
+        <br /><br />
+        <label>Gender :</label>
+        <br />
+        <input type="radio" name="Gender" id="Gender_male" />
+        <label for="Gender_male">Male</label>
+        <br />
+        <input type="radio" name="Gender" id="Gender_female" />
+        <label for="radio">Female</label>
+        <br />
+        <input type="radio" name="Gender" id="other" />
+        <label for="radio">Other</label>
+        <br />
+        <br />
+        <label for="data_of_birth">DOB</label>
+        <input type="datetime-local" name="data_of_birth" id="dob" />
+        <br />
+        <label for="phone">Phone: </label>
+        <input type="text" value="+91" disabled size="3" />
+        <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+        <br />
+        <br />
+        <label for="address">Addres</label>
+        <br />
+        <textarea name="address" id="address" cols="50" rows="3"></textarea>
+        <br />
+        <br />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Addres"
+        />
+        <br />
+        <br />
+
+        <label for="password">Possword: </label>
+        <input type="password" name="password" id="password" />
+        <br /><br />
+        <label for="conform_password">Re-type password: </label>
+        <input type="password" name="conform_password" id="conform_password" />
+        <br /><br />
+
+        <input type="checkbox" value="agreed" />
+        <label>Agree to terms and conditions</label>
+        <br />
+
+        <label for="file_upload">Choose File</label>
+        <input type="file" name="file_upload" id="file_upload" />
+        <br />
+        <label>Chose Color</label>
+        <input type="color" name="color" id="color" />
+        <br />
+        <br />
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
